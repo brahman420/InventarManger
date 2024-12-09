@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Item Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./darkmode.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="ItemManger.html">Manager</a></li>
+            <li><a href=".html">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>Welcome to the Item Dashboard</h1>
+    <div class="container">
+        <!-- Dark Mode Toggle Button -->
+        <button id="toggleTheme" class="toggle-button">Switch to Dark Mode</button>
+
+        <!-- Theme and Category Selectors -->
+        <div class="selectors">
+            <label for="themeSelect">Select Theme:</label>
+            <select id="themeSelect">
+                <option value="">-- Select a Theme --</option>
+            </select>
+
+            <label for="categorySelect">Select Category:</label>
+            <select id="categorySelect" disabled>
+                <option value="">-- Select a Category --</option>
+            </select>
+        </div>
+
+        <!-- Items List -->
+        <div class="items">
+            <h2>Items List</h2>
+            <ul id="itemsList"></ul>
+
+            <!-- New section for selecting a person after selecting an item -->
+            <div class="persons" id="personsSection" style="display: none;">
+                <h2>Select a Person to Assign the Item</h2>
+                <ul id="personsList"></ul>
+            </div>
+        </div>
+
+        <!-- Add Item Section -->
+        <div class="add-item selectors">
+            <h2>Add New Item</h2>
+            <label for="addItemThemeSelect">Select Theme:</label>
+            <select id="addItemThemeSelect">
+                <option value="">-- Select a Theme --</option>
+            </select>
+
+            <label for="addItemCategorySelect">Select Category:</label>
+            <select id="addItemCategorySelect" disabled>
+                <option value="">-- Select a Category --</option>
+            </select>
+
+            <label for="newItemName">Item Name:</label>
+            <input type="text" id="newItemName" class="input-field" placeholder="Enter item name">
+
+            <button id="addItemButton" class="toggle-button" disabled>Add Item</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2023 Your Company Name
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Manager</title>
+    <link rel="stylesheet" href="Styles.css"> <!-- Link to your stylesheet -->
+    <script src="./darkmode.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="Dashboard.html">Dashboard</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <!-- Dark Mode Toggle Button -->
+        <button id="toggleTheme" class="toggle-button">Switch to Dark Mode</button>
+
+        <!-- Original Item Manager Section -->
+        <h1>Item Manager</h1>
+        <div class="item-manager">
+            <!-- Left panel for database items -->
+            <div class="panel left-panel" id="left-panel">
+                <ul>
+                    <!-- Items will be listed here dynamically by the original JavaScript -->
+                </ul>
+            </div>
+            <!-- Right panel -->
+            <div class="panel right-panel" id="right-panel">
+                <div id="item-details">
+                    <h2 id="item-name">Vælg et item</h2>
+                    <p id="item-category">Kategori: </p>
+                    <p id="item-theme">Tema: </p>
+                    <p id="item-person">Person: </p>
+                    <p id="item-email">Email: </p>
+                    <button id="Remove-InUse">Fjern fra person</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- New Person-Item Manager Section -->
+        <h1>Person-Item Manager</h1>
+        <div class="item-manager">
+            <!-- Left panel for persons -->
+            <div class="panel left-panel" id="person-left-panel">
+                <ul id="person-list">
+                    <!-- Persons will be listed here dynamically -->
+                </ul>
+            </div>
+            <!-- Right panel to display items linked to the selected person -->
+            <div class="panel right-panel" id="person-right-panel">
+                <div id="person-details">
+                    <h2 id="person-name">Vælg en person</h2>
+                    <ul id="person-items-list">
+                        <!-- Items linked to the selected person will be listed here -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Original script for the Item Manager -->
+    <script src="ItemManger.js" defer></script> 
+    <!-- New script for the Person-Item Manager (you'll create this) -->
+    <script src="PersonItemManager.js" defer></script> 
+</body>
+</html>
