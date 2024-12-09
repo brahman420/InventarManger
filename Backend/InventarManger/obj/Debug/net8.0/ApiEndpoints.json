@@ -1,0 +1,154 @@
+[
+  {
+    "ContainingType": "InventarManger.Controllers.ItemsController",
+    "Method": "AddItem",
+    "RelativePath": "api/items/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "item",
+        "Type": "InventarManger.Classes.Item",
+        "IsRequired": true
+      },
+      {
+        "Name": "categoryId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InventarManger.Controllers.ItemsController",
+    "Method": "GetItemsByCategory",
+    "RelativePath": "api/items/categories/items",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoryId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InventarManger.Controllers.ItemsController",
+    "Method": "GetItemInfo",
+    "RelativePath": "api/items/GetItemInfo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InventarManger.Controllers.ItemsController",
+    "Method": "GetItemsInUse",
+    "RelativePath": "api/items/GetItemsInUse",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InventarManger.Controllers.ItemsController",
+    "Method": "GetAllThemes",
+    "RelativePath": "api/items/themes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InventarManger.Controllers.ItemsController",
+    "Method": "GetCategoriesByTheme",
+    "RelativePath": "api/items/themes/categories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "themeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InventarManger.Controllers.LoginUser",
+    "Method": "Login",
+    "RelativePath": "api/LoginUser/LoginUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "InventarManger.Classes.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InventarManger.Controllers.PersonController",
+    "Method": "GetAllPersons",
+    "RelativePath": "api/Person/GetAllPersons",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InventarManger.Controllers.PersonController",
+    "Method": "GetPersonByitem",
+    "RelativePath": "api/Person/GetPersonByitem",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InventarManger.Controllers.PersonController",
+    "Method": "GivePersonItem",
+    "RelativePath": "api/Person/GivePersonItem",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "personId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "itemId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
